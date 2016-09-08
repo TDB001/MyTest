@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override pjajajajh哈哈地方oint for customization after application launch.
+    // Override pjajajajh哈哈地方oint for customization after application launch.是的发送到发送到
     return YES;
 }
 
