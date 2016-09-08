@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dKN-Er-zV9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9kt-Zh-WO7">
+            <objects>
+                <navigationController id="dKN-Er-zV9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wVd-2k-K3S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="r4b-XD-Z2T" kind="relationship" relationship="rootViewController" id="0bX-oE-Sqf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSh-ta-TfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="514"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="QgA-Qt-XAD">
+            <objects>
+                <viewController id="r4b-XD-Z2T" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cim-85-9yg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wic-nm-sHG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="073-gC-CrB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8fT-3C-USG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HgI-TQ-03v">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8fT-3C-USG" firstAttribute="leading" secondItem="073-gC-CrB" secondAttribute="leading" id="F1K-D4-q7X"/>
+                            <constraint firstItem="8fT-3C-USG" firstAttribute="top" secondItem="cim-85-9yg" secondAttribute="bottom" id="Gx2-EU-N2L"/>
+                            <constraint firstAttribute="bottom" secondItem="8fT-3C-USG" secondAttribute="bottom" id="NNy-N9-bTG"/>
+                            <constraint firstAttribute="trailing" secondItem="8fT-3C-USG" secondAttribute="trailing" id="wP5-Zo-gkV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="Yhn-Gn-aD4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="8fT-3C-USG" id="7U5-HO-5pF"/>
+                        <outlet property="collectionViewFlowLayout" destination="HgI-TQ-03v" id="ub3-eW-B9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ej6-ka-Klp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="514"/>
+        </scene>
+    </scenes>
+</document>
