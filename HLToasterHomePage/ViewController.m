@@ -80,6 +80,9 @@
     
 //    
 //    [[NSNotificationCenter defaultCenter] postNotificationName:@"HLGoodsDetailCellCollectionScroll" object:[NSString stringWithFormat:@"%f", offsetX]];
+    
+    //我就修改你怎么了
+    
 }
 
 
